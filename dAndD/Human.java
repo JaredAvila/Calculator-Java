@@ -6,6 +6,8 @@ public class Human {
 
     public void attck(Human victim) {
         victim.health = victim.health - this.strength;
+        System.out.println("You got knocked the f*** out, man! ");
+
     }
 
     public Human() {
@@ -15,6 +17,6 @@ public class Human {
         this.health = 100;
     }
     public void getStats() {
-        System.out.println("Health: " + this.health + " Strength: " + this.strength + " Intelligence: " + " Stealth: " + this.stealth);
+        System.out.println(this.getClass() + ": stats -------------\nHealth: " + this.health + " Strength: " + this.strength + " Intelligence: " + " Stealth: " + this.stealth);
     }
 }
